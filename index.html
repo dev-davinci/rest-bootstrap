@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./resources/css/main.css" />
+    <title>Restaurant - Bootstrap</title>
+  </head>
+  <body>
+    <!--------------------------- HEADER SECTION ---------------------------->
+    <header class="header">
+      <div class="overlay"></div>
+      <video class="header__video" playsinline muted loop autoplay>
+        <source src="./resources/img/header-video.mp4" type="video/mp4" />
+      </video>
+      <div class="header__text h-100">
+        <a href="#" class="header__order">Order now!</a>
+        <a href="#" class="header__logo"
+          >Rest<span class="colorful-span">au</span>rant</a
+        >
+        <div class="container h-100 d-flex text-center align-items-center">
+          <div class="w-100 text-white">
+            <h1 class="heading-1">
+              Fulfill your <span class="colorful-span">desire!</span>
+            </h1>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+              ipsum dolor sit amet.
+            </p>
+          </div>
+        </div>
+      </div>
+      <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon="" href="#content"></a>
+    </header>
+    <!--------------------------- CONTENT SECTION ---------------------------->
+    <section class="content" id="content">
+      <div class="d-flex flow-row text-center">
+        <div
+          class="content__collapse p-4 bg-primary align-items-center"
+          data-toggle="collapse"
+          data-target="#about"
+        >
+          <i class="fa fa-info-circle" aria-hidden="true"></i>
+          <p class="lead">About</p>
+        </div>
+
+        <div
+          class="content__collapse p-4 bg-dark"
+          data-toggle="collapse"
+          data-target="#menu"
+        >
+          <i class="fa fa-list-alt" aria-hidden="true"></i>
+          <p class="lead">Menu</p>
+        </div>
+        <div
+          class="content__collapse p-4 bg-success"
+          data-toggle="collapse"
+          data-target="#crew"
+        >
+          <i class="fa fa-users" aria-hidden="true"></i>
+          <p class="lead">Our crew</p>
+        </div>
+        <div
+          class="content__collapse p-4 bg-danger"
+          data-toggle="collapse"
+          data-target="#feedback"
+        >
+          <i class="fa fa-comments-o" aria-hidden="true"></i>
+          <p class="lead">Customers' feedback</p>
+        </div>
+      </div>
+      <!--------------------------- ABOUT COLLAPSE ---------------------------->
+      <div id="about" class="collapse show">
+        <div class="about container">
+          <h2 class="heading-2">Who are we?</h2>
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <div class="about__img-box d-flex justify-content-between">
+                <div class="about__image">
+                  <img
+                    src="./resources/img/brick-wall-1834784_1920-min.jpg"
+                    alt="img1"
+                  />
+                </div>
+                <div class="about__image">
+                  <img
+                    src="./resources/img/kitchen-731351_1920-min.jpg"
+                    alt="img1"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="card">
+                <a href="#" class="about__logo"
+                  >Rest<span class="colorful-span">au</span>rant</a
+                >
+                <div class="card-body text-center">
+                  <h3 class="heading-3">Our services are more than enough!</h3>
+                  <p class="about__text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Error ipsa corporis aliquam asperiores? Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Ex nam ad autem
+                    voluptates quas corrupti, quaerat quod perferendis.
+                  </p>
+                  <a href="#" class="about__learn-more">Learn more &#8594;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--------------------------- MENU COLLAPSE ---------------------------->
+      <div id="menu" class="collapse">
+        <div class="menu container ">
+          <h2 class="heading-2">Food list</h2>
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <div class="menu__item ">
+                <img src="./resources/img/pizza-min.jpg" alt="pizza" />
+                <h4 class="heading-4">Pizza</h4>
+                <p class="menu__price">19$</p>
+                <a href="#" class="menu__cart"
+                  >Add to cart
+                  <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="menu__item">
+                <img
+                  src="./resources/img/fried_chicken-min.jpg"
+                  alt="fried_chicken"
+                />
+                <h4 class="heading-4">Fried Chicken</h4>
+                <p class="menu__price">20$</p>
+                <a href="#" class="menu__cart"
+                  >Add to cart
+                  <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="menu__item">
+                <img src="./resources/img/bacon-min.jpg" alt="bacon" />
+                <h4 class="heading-4">Bacon</h4>
+                <p class="menu__price">17$</p>
+                <a href="#" class="menu__cart"
+                  >Add to cart
+                  <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="menu__item">
+                <img src="./resources/img/burger-min.jpg" alt="Burger" />
+                <h4 class="heading-4">Burger</h4>
+                <p class="menu__price">15$</p>
+                <a href="#" class="menu__cart"
+                  >Add to cart
+                  <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--------------------------- CREW COLLAPSE ---------------------------->
+      <div class="collapse" id="crew">
+        <div class="crew container">
+          <h2 class="heading-2">
+            Our amazing team!
+          </h2>
+        
+          <div class="row text-center text-white">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="crew__item">
+                <div class="crew__img-box">
+                  <img src="./resources/img/ceo-min.jpg" alt="CEO"/>
+                  <div class="crew__social">
+                    <ul class="crew__list">
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="crew__text-box"> 
+                  <h5 class="heading-5">Fabian Zakaria</h5>
+                  <span class="crew__position">CEO</span>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="crew__item">
+                <div class="crew__img-box">
+                  <img src="./resources/img/accounter-min.jpg" alt="accounter"/>
+                  <div class="crew__social">
+                    <ul class="crew__list">
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="crew__text-box"> 
+                  <h5 class="heading-5">Ahmed Mahmoud</h5>
+                  <span class="crew__position">Accounter</span>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="crew__item">
+                <div class="crew__img-box">
+                  <img src="./resources/img/chef1-min.jpg" alt="Chef"/>
+                  <div class="crew__social">
+                    <ul class="crew__list">
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="crew__text-box"> 
+                  <h5 class="heading-5">Fady Hany</h5>
+                  <span class="crew__position">Chef</span>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="crew__item">
+                <div class="crew__img-box">
+                  <img src="./resources/img/chef2-min.jpg" alt="Chef Assistant"/>
+                  <div class="crew__social">
+                    <ul class="crew__list">
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="crew__text-box"> 
+                  <h5 class="heading-5">Muhamad Hany</h5>
+                  <span class="crew__position">Chef Assistant</span> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-------------------------------- FEEDBACK COLLAPSE ----------------------------->
+      <div id="feedback" class="collapse">
+        <div class="feedback container">
+          <h2 class="heading-2" style="margin-bottom: 4rem;">Tell us your opinion!</h2>
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <form class="form">
+                <div class="form-group">
+                  <label for="full-name">Full Name</label>
+                  <input type="text" class="form-control" id="full-name" placeholder="Full Name">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label for="textarea">Your Message</label>
+                  <textarea class="form-control" id="textarea" rows="1" placeholder="You Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-danger">Submit</button>
+              </form>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="form__img" style="width: 100%;">
+                <img src="./resources/img/kitchen-731351_1920-min.jpg" alt="Kitchen" class="img-responsive">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <footer class="footer text-center text-white">
+      <p class="footer__text mb-0">Copyright &copy; All rights reserved </p>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://use.fontawesome.com/9dbcaca30c.js"></script>
+    <script src="./resources/js/custom.js"></script>
+  </body>
+</html>
